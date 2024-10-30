@@ -1,9 +1,7 @@
 package com.example.order;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
-import org.hamcrest.Matchers;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -54,7 +52,7 @@ class OrderServiceApplicationTest {
 			.extract()
 			.body().asString();
 		
-		assertThat(orderResponse, Matchers.is("Order placed successfully"));
+		assertThat(orderResponse).isEqualTo("Order placed successfully");
 	}
 
 }
