@@ -23,7 +23,7 @@ class OrderServiceApplicationTest {
 	
 	@BeforeEach
 	void setup() {
-		RestAssured.baseURI = "http://localhost:8081";
+		RestAssured.baseURI = "http://localhost";
 		RestAssured.port = this.port;
 	}
 	
