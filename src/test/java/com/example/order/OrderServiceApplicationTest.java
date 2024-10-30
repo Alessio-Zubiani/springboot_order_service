@@ -15,7 +15,9 @@ import io.restassured.RestAssured;
 class OrderServiceApplicationTest {
 	
 	@ServiceConnection
-	static MySQLContainer mySQLContainer = (MySQLContainer) new MySQLContainer("mysql:latest").withReuse(true);
+	static MySQLContainer mySQLContainer = (MySQLContainer) new MySQLContainer("mysql:latest")
+			.withDatabaseName("order_service")
+			.withReuse(true);
 	
 	@LocalServerPort
 	private Integer port;
