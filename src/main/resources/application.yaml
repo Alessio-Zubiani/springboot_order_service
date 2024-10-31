@@ -14,3 +14,7 @@ spring:
 
 inventory:
   uri: http://localhost:8082
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
