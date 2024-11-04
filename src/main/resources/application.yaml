@@ -16,5 +16,9 @@ inventory:
   uri: http://localhost:8082
 
 springdoc:
+  api-docs:
+    enabled: true 
+    path: /order/v3/api-docs
   swagger-ui:
-    path: /swagger-ui.html
+    enabled: true
+    path: /order/swagger-ui.html
